@@ -1,0 +1,22 @@
+.title {
+  position: relative;
+
+  text-align: center;
+  font-size: 15px;
+  font-weight: $_main_font_weight;
+  color: $_accent_color;
+
+  @include media(desktop) {
+    font-size: 60px;
+  }
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    -webkit-text-stroke: 6px $_white_font_color;
+    z-index: -1;
+  }
+}

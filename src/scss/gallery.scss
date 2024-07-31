@@ -1,0 +1,51 @@
+.gallery {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include media(desktop) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  &-container {
+    padding: 0;
+  }
+
+  &-title {
+    margin-bottom: 14px;
+
+    @include media(desktop) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &-subtitle {
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+    text-align: center;
+
+    @include media(desktop) {
+      margin-bottom: 70px;
+
+      max-width: 800px;
+      font-size: 45px;
+    }
+  }
+}
+
+.swiper {
+  text-align: center;
+  max-width: 320px;
+  cursor: grab;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+
+  &-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
