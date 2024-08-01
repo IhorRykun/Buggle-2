@@ -7,16 +7,15 @@
 
   &-title {
     font-size: 15px;
-    -webkit-text-stroke-color: $_white_font_color;
-    -webkit-text-stroke-width: 1px;
-    color: $_accent_color;
-    font-weight: $_main_font_weight;
     margin-bottom: 29px;
     text-align: center;
 
     @include media(desktop) {
-      font-size: 60px;
+      position: relative;
       color: $_accent_color;
+      -webkit-text-stroke: 3px $_white_font_color;
+
+      font-size: 60px;
       line-height: 53px;
       text-align: center;
       margin-bottom: 70px;
@@ -26,27 +25,29 @@
   &-list {
     display: flex;
     flex-wrap: wrap;
-    @include media(desktop) {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-  &-item {
-    font-size: 15px;
-    width: calc((100% - 26px) / 2);
-    margin-right: 26px;
-    line-height: 13px;
+    justify-content: space-between;
 
     @include media(desktop) {
+
+      display: flex;
+    }
+  }
+
+  &-item {
+    max-width: 92px;
+    width: 100%;
+    font-size: 15px;
+    margin-right: 26px;
+    font-weight: $_main_font_weight;
+    line-height: 13px;
+    margin-bottom: 18px;
+
+    @include media(desktop) {
+      // width: 400px;
+      margin-right: 250px;
       font-size: 45px;
       line-height: 40px;
       font-weight: $_main_font_weight;
-      margin-bottom: 35px;
-      width: 400px;
-      margin-right: 250px;
-      // margin-right: 100px;
     }
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
@@ -58,12 +59,16 @@
       display: block;
       font-size: 15px;
       color: $_accent_color;
-      text-align: center;
       line-height: 13px;
       margin-top: 18px;
 
       @include media(desktop) {
         margin-top: 30px;
+        font-size: 45px;
+        font-weight: $_main_font_weight;
+        line-height: 40px;
+        text-align: left;
+        display: block;
       }
     }
   }
