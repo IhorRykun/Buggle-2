@@ -1,2 +1,2 @@
-import './js/hideFooterLinksOnAdditionalPages';
+import './js/hideFooterLinksOnFooterPages';
 import './js/handleBackIconButtonClick';
