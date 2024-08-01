@@ -6,13 +6,13 @@
   }
 
   &-title {
-    font-weight: $_main_font_weight;
     font-size: 15px;
     -webkit-text-stroke-color: $_white_font_color;
     -webkit-text-stroke-width: 1px;
     color: $_accent_color;
     font-weight: $_main_font_weight;
     margin-bottom: 29px;
+    text-align: center;
 
     @include media(desktop) {
       font-size: 60px;
@@ -35,6 +35,9 @@
   }
   &-item {
     font-size: 15px;
+    width: calc((100% - 26px) / 2);
+    margin-right: 26px;
+    line-height: 13px;
 
     @include media(desktop) {
       font-size: 45px;
@@ -52,9 +55,16 @@
       margin-right: 0;
     }
     &--span {
-      color: $_accent_color;
-      margin-top: 30px;
       display: block;
+      font-size: 15px;
+      color: $_accent_color;
+      text-align: center;
+      line-height: 13px;
+      margin-top: 18px;
+
+      @include media(desktop) {
+        margin-top: 30px;
+      }
     }
   }
 }
