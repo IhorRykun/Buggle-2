@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){const n=document.getElementById("footer-links-container");function e(){window.innerWidth<1440?n.style.display="none":n.style.display=""}e(),window.addEventListener("resize",e)});const t=document.getElementById("backButton");function o(){window.location.href="index.html"}t&&t.addEventListener("click",o);
+//# sourceMappingURL=footer-page-page.js-84bcf90e.js.map
