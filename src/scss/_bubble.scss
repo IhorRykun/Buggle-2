@@ -1,0 +1,123 @@
+.buggle {
+  padding-top: 41px;
+
+  @include media(desktop) {
+    padding: 27px 0;
+    min-height: 680px;
+  }
+
+  &-title-img {
+    display: none;
+    @include media(desktop) {
+      display: block;
+      position: absolute;
+      top: -18px;
+      left: 172px;
+      z-index: 2;
+    }
+  }
+  &-picture-bubble {
+    display: none;
+
+    @include media(desktop) {
+      display: block;
+      position: absolute;
+      top: -50px;
+      right: 0;
+      z-index: 0;
+      width: 862px;
+    }
+  }
+
+  &-picture-bubble--mobile {
+    @include media(mobile) {
+      display: block;
+      min-width: 195px;
+      width: 100%;
+    }
+
+    // @include media(to-desktop) {
+    //   display: none;
+    // }
+    @include media(desktop) {
+      display: none;
+    }
+  }
+  &-tittle-mobile {
+    font-size: 18px;
+    color: $_white_font_color;
+    font-weight: $_white_font_color;
+    text-align: center;
+    display: block;
+    -webkit-text-stroke-color: $_accent_color;
+    -webkit-text-stroke-width: 2px;
+
+    @include media(desktop) {
+      display: none;
+    }
+  }
+  &-link {
+    width: 202px;
+    height: 59px;
+    border: 1px solid $_accent_color;
+    color: $_black_font_color;
+    background-color: $_white_font_color;
+    border-radius: 30px;
+    display: flex;
+    padding-left: 35px;
+    align-items: center;
+    margin-left: 28px;
+    @include media(desktop) {
+      position: absolute;
+      top: 300px;
+      left: 304px;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+      transition: $_main_transition;
+      border: none;
+      color: $_accent_color;
+    }
+  }
+  &-google-pay {
+    margin-right: 8px;
+    @include media(desktop) {
+      margin-right: 8px;
+    }
+  }
+
+  &-title {
+    display: none;
+    @include media(desktop) {
+      display: block;
+      position: absolute;
+      top: 164px;
+      left: 300px;
+      width: 321px;
+      text-align: center;
+      text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      font-weight: $_main_font_weight;
+      font-size: 45px;
+    }
+  }
+
+  &-bubble--green {
+    display: none;
+    @include media(desktop) {
+      display: block;
+      position: absolute;
+      top: 374px;
+      left: 300px;
+    }
+  }
+  &-bubble--white {
+    display: none;
+    @include media(desktop) {
+      display: block;
+      position: absolute;
+      top: 430px;
+      left: 180px;
+    }
+  }
+}
