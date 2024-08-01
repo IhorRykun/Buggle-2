@@ -1,8 +1,9 @@
 .buggle {
-  padding-top: 41px;
+  padding-top: 74px;
 
   @include media(desktop) {
-    padding: 27px 0;
+    display: block;
+    padding-top: 27px;
     min-height: 680px;
   }
 
@@ -34,6 +35,8 @@
       display: block;
       min-width: 195px;
       width: 100%;
+      margin-top: 30px;
+      margin-bottom: 20px;
     }
 
     // @include media(to-desktop) {
@@ -44,29 +47,40 @@
     }
   }
   &-tittle-mobile {
+    position: relative;
     font-size: 18px;
-    color: $_white_font_color;
-    font-weight: $_white_font_color;
     text-align: center;
-    display: block;
-    -webkit-text-stroke-color: $_accent_color;
-    -webkit-text-stroke-width: 2px;
+    line-height: 16px;
+    font-weight: $_main_font_weight;
+    // -webkit-text-stroke: 1.5px $_accent_color;
+    // color: $_white_font_color;
+    // font-weight: $_main_font_weight;
+    -webkit-text-fill-color: $_white_font_color;
+    -webkit-text-stroke: 1px $_accent_color;
 
     @include media(desktop) {
       display: none;
     }
   }
+
   &-link {
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     height: 59px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
     border: 1px solid $_accent_color;
-    color: $_black_font_color;
     background-color: $_white_font_color;
+    color: $_black_font_color;
     border-radius: 30px;
-    display: flex;
+
     padding-left: 35px;
+
+    display: flex;
     align-items: center;
-    margin-left: 28px;
+
     @include media(desktop) {
       position: absolute;
       top: 300px;
