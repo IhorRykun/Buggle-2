@@ -14,7 +14,15 @@
 }
 
 @import './header.scss';
+@import './header-desktop-nav.scss';
+
 @import './bubble.scss';
 @import './player.scss';
 @import './benefits';
 @import './gallery.scss';
+
+@import './footer-links.scss';
+@import './footer.scss';
+
+@import './footer-page-header.scss';
+@import './footer-page-main.scss';

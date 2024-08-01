@@ -1,0 +1,87 @@
+.footer-links {
+  &-group {
+    max-width: 140px;
+    margin-left: auto;
+
+    @include media(desktop) {
+      max-width: 575px;
+      margin-top: 30px;
+    }
+  }
+
+  &-link {
+    display: inline-block;
+    position: relative;
+
+    font-size: 13px;
+    font-weight: $_main_font_weight;
+    color: $_white_font_color;
+
+    &:hover,
+    &:focus {
+      &::before {
+        -webkit-text-stroke: 2px $_accent_color_hover;
+      }
+    }
+
+    @include media(to-desktop) {
+      &::before {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        -webkit-text-stroke: 2px $_accent_color;
+        z-index: -1;
+
+        transition: $_main_transition;
+      }
+
+      &:hover,
+      &:focus {
+        &::before {
+          -webkit-text-stroke: 2px $_accent_color_hover;
+        }
+      }
+    }
+
+    @include media(desktop) {
+      font-size: 30px;
+      color: $_accent_color;
+
+      transition: $_main_transition;
+
+      &:hover,
+      &:focus {
+        color: $_accent_color_hover;
+      }
+    }
+  }
+
+  &-text {
+    text-align: center;
+    position: relative;
+
+    font-size: 13px;
+    font-weight: $_main_font_weight;
+    color: $_white_font_color;
+    transition: $_main_transition;
+
+    @include media(to-desktop) {
+      &::before {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        -webkit-text-stroke: 2px $_accent_color;
+        z-index: -1;
+      }
+    }
+
+    @include media(desktop) {
+      font-size: 30px;
+      color: $_accent_color;
+    }
+  }
+}

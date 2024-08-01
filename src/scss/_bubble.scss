@@ -87,9 +87,11 @@
       left: 304px;
     }
 
+    transition: $_main_transition;
+
     &:hover {
       transform: scale(1.2);
-      transition: $_main_transition;
+
       border: none;
       color: $_accent_color;
     }

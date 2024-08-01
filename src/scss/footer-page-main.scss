@@ -1,0 +1,28 @@
+.footer-page {
+  &-wrap {
+    background-color: $_white_font_color;
+    border-radius: 40px;
+    border: 3px solid $_accent_color;
+
+    padding: 25px 20px;
+
+    @include media(desktop) {
+      padding: 50px;
+      margin: 0 auto;
+      margin-top: 90px;
+      max-width: 900px;
+      border: 12px solid $_accent_color;
+    }
+  }
+
+  &-text {
+    font-family: $_secondary_font_family;
+    font-size: 12px;
+    font-weight: $_main_font_weight;
+    color: $_black_font_color;
+
+    @include media(desktop) {
+      font-size: 19px;
+    }
+  }
+}

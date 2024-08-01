@@ -1,0 +1,68 @@
+.header {
+  position: relative;
+  height: 52px;
+
+  @include media(desktop) {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  &-footer-page-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: $_main_font_weight;
+    color: $_white_font_color;
+
+    @include media(desktop) {
+      top: 150px;
+      font-size: 30px;
+    }
+
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      right: 0;
+
+      -webkit-text-stroke: 6px $_accent_color;
+      z-index: -1;
+    }
+  }
+
+  &-arrow-button {
+    position: absolute;
+    z-index: 10000;
+    left: 24px;
+    top: 6px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $_accent_color;
+
+    transition: $_main_transition;
+
+    &:hover,
+    &:focus {
+      color: $_accent_color_hover;
+    }
+
+    @include media(desktop) {
+      display: none;
+    }
+  }
+
+  &-arrow-icon {
+    fill: currentColor;
+  }
+}
