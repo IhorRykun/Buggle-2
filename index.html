@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/buggle-2/assets/favicon-f9ce9ba5.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Buggle 2</title>
+    
+    <script type="module" crossorigin src="/buggle-2/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/buggle-2/assets/styles-98ca09a3.js">
+    <link rel="modulepreload" crossorigin href="/buggle-2/assets/vendor-52062990.js">
+    <link rel="stylesheet" href="/buggle-2/assets/styles-5e0bc74d.css">
+    <link rel="stylesheet" href="/buggle-2/assets/vendor-7c8ef494.css">
+  </head>
 
-<head>
- <meta charset="UTF-8" />
- <link rel="icon" type="image/svg+xml" href="/buggle-2/assets/favicon-f9ce9ba5.svg" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <link rel="preconnect" href="https://fonts.googleapis.com" />
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
- <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet" />
- <title>Buggle 2</title>
- 
-  <script type="module" crossorigin src="/buggle-2/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/buggle-2/assets/styles-3599bd0c.js">
-  <link rel="modulepreload" crossorigin href="/buggle-2/assets/vendor-52062990.js">
-  <link rel="stylesheet" href="/buggle-2/assets/styles-dd77ec20.css">
-  <link rel="stylesheet" href="/buggle-2/assets/vendor-7c8ef494.css">
-</head>
-
-<body>
- <header class="header">
+  <body>
+    <header class="header">
   <div class="container" style="position: relative">
     <div class="header-logo">
-      <img src="/buggle-2/assets/buggle-6097522f.svg" alt="logo" />
+      <a class="header-logo-link" href="/index.html"
+        ><img src="/buggle-2/assets/buggle-6097522f.svg" alt="logo"
+      /></a>
     </div>
 
     <button type="button" class="header-burger-button" id="mobileMenuButton">
@@ -44,37 +48,43 @@
         </li>
 
         <li class="header-desktop-nav-item">
-          <a href="#" class="header-desktop-nav-link" data-text="Benefits"
+          <a
+            href="#benefits"
+            class="header-desktop-nav-link"
+            data-text="Benefits"
             >Benefits</a
           >
         </li>
 
         <li class="header-desktop-nav-item">
-          <a href="#" class="header-desktop-nav-link" data-text="Gallery"
+          <a href="#gallery" class="header-desktop-nav-link" data-text="Gallery"
             >Gallery</a
           >
         </li>
 
         <li class="header-desktop-nav-item">
-          <a href="#" class="header-desktop-nav-link" data-text="About"
+          <a href="#about" class="header-desktop-nav-link" data-text="About"
             >About</a
           >
         </li>
 
         <li class="header-desktop-nav-item">
-          <a href="#" class="header-desktop-nav-link" data-text="Reviews"
+          <a href="#reviews" class="header-desktop-nav-link" data-text="Reviews"
             >Reviews</a
           >
         </li>
 
         <li class="header-desktop-nav-item">
-          <a href="#" class="header-desktop-nav-link" data-text="Advantages"
+          <a
+            href="#advantages"
+            class="header-desktop-nav-link"
+            data-text="Advantages"
             >Advantages</a
           >
         </li>
 
         <li class="header-desktop-nav-item">
-          <a href="#" class="header-desktop-nav-link" data-text="FAQ">FAQ</a>
+          <a href="#FAQ" class="header-desktop-nav-link" data-text="FAQ">FAQ</a>
         </li>
       </ul>
     </nav>
@@ -88,35 +98,40 @@
     </li>
 
     <li class="header-desktop-nav-item">
-      <a href="#" class="header-desktop-nav-link" data-text="Benefits"
+      <a href="#benefits" class="header-desktop-nav-link" data-text="Benefits"
         >Benefits</a
       >
     </li>
 
     <li class="header-desktop-nav-item">
-      <a href="#" class="header-desktop-nav-link" data-text="Gallery"
+      <a href="#gallery" class="header-desktop-nav-link" data-text="Gallery"
         >Gallery</a
       >
     </li>
 
     <li class="header-desktop-nav-item">
-      <a href="#" class="header-desktop-nav-link" data-text="About">About</a>
+      <a href="#about" class="header-desktop-nav-link" data-text="About"
+        >About</a
+      >
     </li>
 
     <li class="header-desktop-nav-item">
-      <a href="#" class="header-desktop-nav-link" data-text="Reviews"
+      <a href="#reviews" class="header-desktop-nav-link" data-text="Reviews"
         >Reviews</a
       >
     </li>
 
     <li class="header-desktop-nav-item">
-      <a href="#" class="header-desktop-nav-link" data-text="Advantages"
+      <a
+        href="#advantages"
+        class="header-desktop-nav-link"
+        data-text="Advantages"
         >Advantages</a
       >
     </li>
 
     <li class="header-desktop-nav-item">
-      <a href="#" class="header-desktop-nav-link" data-text="FAQ">FAQ</a>
+      <a href="#FAQ" class="header-desktop-nav-link" data-text="FAQ">FAQ</a>
     </li>
   </ul>
 </nav>
@@ -125,105 +140,174 @@
 </header>
 
 
- <main>
-  <section class="buggle">
- <div class="container">
-  <a class="buggle-title-img" href="/index.html"><img src="/buggle-2/assets/buggle-6097522f.svg" alt="title-svg"
-    aria-label="title"></a>
-  <div class="buggle-container-relative">
-   <picture class="buggle-picture-bubble">
-    <source srcset="/buggle-2/assets/main_1x-56b804db.png 1x, /buggle-2/assets/main_2x-aeb3193e.png 2x">
-    <img src="/buggle-2/assets/main_1x-56b804db.png" alt="img_main">
-   </picture>
-   <h1 class="buggle-tittle-mobile">Buggle 2<br> Color Bubble Shoter</h1>
-   <picture class="buggle-picture-bubble--mobile">
-    <source srcset="/buggle-2/assets/main_moble_1x-e5e7dc11.png 1x, /buggle-2/assets/main_moble_2x-3d5d671b.png 2x">
-    <img src="/buggle-2/assets/main_moble_1x-e5e7dc11.png" alt="img_main">
-   </picture>
+    <main>
+      <section class="buggle">
+  <div class="container">
+    <a class="buggle-title-img" href="/index.html"
+      ><img src="/buggle-2/assets/buggle-6097522f.svg" alt="title-svg" aria-label="title"
+    /></a>
+    <div class="buggle-container-relative">
+      <picture class="buggle-picture-bubble">
+        <source
+          srcset="/buggle-2/assets/main_1x-56b804db.png 1x, /buggle-2/assets/main_2x-aeb3193e.png 2x"
+        />
+        <img src="/buggle-2/assets/main_1x-56b804db.png" alt="img_main" />
+      </picture>
+      <h1 class="buggle-title-mobile" data-text="Buggle 2">Buggle 2</h1>
+      <h2 class="buggle-title-mobile" data-text="Color Bubble Shoter">
+        Color Bubble Shoter
+      </h2>
+      <picture class="buggle-picture-bubble--mobile">
+        <source
+          srcset="/buggle-2/assets/main_moble_1x-e5e7dc11.png 1x, /buggle-2/assets/main_moble_2x-3d5d671b.png 2x"
+        />
+        <img src="/buggle-2/assets/main_moble_1x-e5e7dc11.png" alt="img_main" />
+      </picture>
+    </div>
+    <h2 class="buggle-title">Color Bubble Shooter</h2>
+    <div class="buggle-container--link">
+      <a
+        class="buggle-link"
+        href="https://play.google.com/store/apps/details?id=com.cookapps.buggle2m"
+        target="_blank"
+        aria-label="buggle-link"
+      >
+        <svg
+          class="buggle-google-pay"
+          width="36"
+          height="34"
+          aria-label="icon-logos_google-play-icon"
+        >
+          <use href="/buggle-2/assets/sprite-86b41eea.svg#icon-logos_google-play-icon"></use>
+        </svg>
+        Download <br />
+        Google Play</a
+      >
+    </div>
+    <picture>
+      <source
+        srcset="/buggle-2/assets/ball_white_1x-635e5f7e.png 1x, /buggle-2/assets/ball_white_2x-d817fa6e.png 2x"
+      />
+      <img
+        class="buggle-bubble--white"
+        src="/buggle-2/assets/ball_white_1x-635e5f7e.png"
+        alt="ball_white"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="/buggle-2/assets/ball_green_1x-3a09325b.png 1x, /buggle-2/assets/ball_green_2x-079c48a3.png 2x"
+      />
+      <img
+        class="buggle-bubble--green"
+        src="/img/buggle/ball_ball_green_1x_1x.png"
+        alt="ball_green"
+      />
+    </picture>
   </div>
-  <h2 class="buggle-title">Color Bubble Shooter</h2>
-  <div class="buggle-container--link">
-   <a class="buggle-link" href="https://play.google.com/store/apps/details?id=com.cookapps.buggle2m" target="_blank"
-    aria-label="buggle-link">
-    <svg class="buggle-google-pay" width="36" height="34" aria-label="icon-logos_google-play-icon">
-     <use href="/buggle-2/assets/sprite-86b41eea.svg#icon-logos_google-play-icon"></use>
-    </svg>
-    Download <br> Google Play</a>
+</section>
+
+      <section class="players" id="players">
+  <div class="container">
+    <h2 class="title players-title" data-text="PLAYER REVIEWS">
+      PLAYER REVIEWS
+    </h2>
+    <ul class="players-list">
+      <li class="players-item">
+        "Addictive gameplay and adorable characters!" -
+        <span class="players-item--span">BubbleShooter<br />Fan</span>
+      </li>
+      <li class="players-item">
+        "The events and daily challenges are super fun!" -
+        <span class="players-item--span">BearLover</span>
+      </li>
+      <li class="players-item">
+        "Great game to pass time and challenge friends." -
+        <span class="players-item--span">PopMaster</span>
+      </li>
+      <li class="players-item">
+        "Can’t stop playing! Every level <br />
+        is exciting." - <span class="players-item--span">HoneyHunter</span>
+      </li>
+    </ul>
+
+    <ul class="players-list-desktop">
+      <li class="players-item">
+        "Addictive gameplay and adorable characters!" -
+        <span class="players-item--span">BubbleShooterFan</span>
+      </li>
+      <li class="players-item">
+        "The events and daily challenges are super fun!" -
+        <span class="players-item--span">BearLover</span>
+      </li>
+      <li class="players-item">
+        "Great game to pass time and challenge friends." -
+        <span class="players-item--span">PopMaster</span>
+      </li>
+      <li class="players-item">
+        "Can’t stop playing! Every level <br />
+        is exciting." - <span class="players-item--span">HoneyHunter</span>
+      </li>
+    </ul>
   </div>
-  <picture>
-   <source srcset="/buggle-2/assets/ball_white_1x-635e5f7e.png 1x, /buggle-2/assets/ball_white_2x-d817fa6e.png 2x">
-   <img class="buggle-bubble--white" src="/buggle-2/assets/ball_white_1x-635e5f7e.png" alt="ball_white">
-  </picture>
-  <picture>
-   <source srcset="/buggle-2/assets/ball_green_1x-3a09325b.png 1x, /buggle-2/assets/ball_green_2x-079c48a3.png 2x">
-   <img class="buggle-bubble--green" src="/img/buggle/ball_ball_green_1x_1x.png" alt="ball_green">
-  </picture>
- </div>
-
-
-
-
 </section>
-  <section class="players" id="players">
- <div class="container">
-  <h2 class="players-title">PLAYER REVIEWS</h2>
-  <ul class="players-list">
-   <li class="players-item">"Addictive gameplay and adorable characters!" - <span
-     class="players-item--span">BubbleShooter<br>Fan</span></li>
-   <li class="players-item">"The events and daily challenges are super fun!" - <span
-     class="players-item--span">BearLover</span></li>
-   <li class="players-item">"Great game to pass time and challenge friends." - <span
-     class="players-item--span">PopMaster</span></li>
-   <li class="players-item">"Can’t stop playing! Every level <br> is exciting." - <span
-     class="players-item--span">HoneyHunter</span></li>
-  </ul>
 
-  <ul class="players-list-desktop">
-   <li class="players-item">"Addictive gameplay and adorable characters!" - <span
-     class="players-item--span">BubbleShooterFan</span></li>
-   <li class="players-item">"The events and daily challenges are super fun!" - <span
-     class="players-item--span">BearLover</span></li>
-   <li class="players-item">"Great game to pass time and challenge friends." - <span
-     class="players-item--span">PopMaster</span></li>
-   <li class="players-item">"Can’t stop playing! Every level <br> is exciting." - <span
-     class="players-item--span">HoneyHunter</span></li>
-  </ul>
- </div>
-
+      <section class="benefits" id="benefits">
+  <div class="container">
+    <h2 class="title benefits-title" data-text="BENEFITS">BENEFITS</h2>
+    <ul class="benefits-list">
+      <li class="benefits-item">
+        <div class="benefits-item-container">
+          <img
+            class="benefits-img"
+            src="/buggle-2/assets/benefits_1-mobile-52e5fd12.svg"
+            alt="benefits_1"
+            aria-label="img-benefits_1"
+          />
+        </div>
+        <p class="benefits-item-text">
+          4.8 <br />
+          Rating
+        </p>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item-container">
+          <img
+            class="benefits-img"
+            src="/buggle-2/assets/benefits_2-mobile-2ef44878.svg"
+            alt="benefits_1"
+            aria-label="img-benefits_2"
+          />
+        </div>
+        <p class="benefits-item-text">50 000+ Downloads</p>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item-container">
+          <img
+            class="benefits-img"
+            src="/buggle-2/assets/benefits_3-mobile-bbe273ae.svg"
+            alt="benefits_1"
+            aria-label="img-benefits_3"
+          />
+        </div>
+        <p class="benefits-item-text">1000+ Reviews</p>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item-container">
+          <img
+            class="benefits-img"
+            src="/buggle-2/assets/benefits_4-mobile-9fd5fa4e.svg"
+            alt="benefits_1"
+            aria-label="img-benefits_4"
+          />
+        </div>
+        <p class="benefits-item-text">Online and offline</p>
+      </li>
+    </ul>
+  </div>
 </section>
-  <section class="benefits">
- <div class="container">
-  <h2 class="benefits-title">BENEFITS</h2>
-  <ul class="benefits-list">
-   <li class="benefits-item">
-    <div class="benefits-item-container">
-     <img class="benefits-img " src="/buggle-2/assets/benefits_1-mobile-52e5fd12.svg" alt="benefits_1" aria-label="img-benefits_1">
-    </div>
-    <p class="benefits-item-text">4.8 <br> Rating</p>
-   </li>
-   <li class="benefits-item">
-    <div class="benefits-item-container">
-     <img class="benefits-img" src="/buggle-2/assets/benefits_2-mobile-2ef44878.svg" alt="benefits_1" aria-label="img-benefits_2">
-    </div>
-    <p class="benefits-item-text">50 000+ Downloads</p>
-   </li>
-   <li class="benefits-item">
-    <div class="benefits-item-container">
-     <img class="benefits-img" src="/buggle-2/assets/benefits_3-mobile-bbe273ae.svg" alt="benefits_1" aria-label="img-benefits_3">
-    </div>
-    <p class="benefits-item-text">1000+ Reviews</p>
-   </li>
-   <li class="benefits-item">
-    <div class="benefits-item-container">
-     <img class="benefits-img" src="/buggle-2/assets/benefits_4-mobile-9fd5fa4e.svg" alt="benefits_1" aria-label="img-benefits_4">
-    </div>
-    <p class="benefits-item-text">Online and offline</p>
-   </li>
 
-  </ul>
- </div>
-</section>
-  <section class="gallery">
+      <section class="gallery" id="gallery">
   <div class="container gallery-container">
     <h2 class="gallery-title title" data-text="Gallery">Gallery</h2>
 
@@ -254,75 +338,128 @@
   </div>
 </section>
 
-  <section class="about" id="about">
- <div class="container">
-
-  <h2 class=" title about-title">About the Game</h2>
-  <div class="about-container--flex">
-   <p class="about-text">In Buggle 2, you'll join Andrew the Bear as he ventures through a vibrant world filled with
-    challenging bubble
-    shooter
-    levels. Aim, shoot, and pop your way through hundreds of stages to help Andrew beat the Queen Bee and bring back the
-    honey.</p>
-   <div class="gift-container">
-    <img class="gift-container-img" src="/buggle-2/assets/Group-82581889.svg" alt="gift" aria-label="gift-img">
-   </div>
+      <section class="about" id="about">
+  <div class="container">
+    <h2 class="title about-title" data-text="About the Game">About the Game</h2>
+    <div class="about-container--flex">
+      <p class="about-text">
+        In Buggle 2, you'll join Andrew the Bear as he ventures through a
+        vibrant world filled with challenging bubble shooter levels. Aim, shoot,
+        and pop your way through hundreds of stages to help Andrew beat the
+        Queen Bee and bring back the honey.
+      </p>
+      <div class="gift-container">
+        <img
+          class="gift-container-img"
+          src="/buggle-2/assets/Group-82581889.svg"
+          alt="gift"
+          aria-label="gift-img"
+        />
+      </div>
+    </div>
   </div>
- </div>
 </section>
 
-  <section class="advantages" id="advantages">
- <div class="container">
-  <h2 class="title advantages-title">ADVANTAGES</h2>
-  <ul class="advantages-list">
-   <li class="advantages-item">Exciting bubble shooter mechanics</li>
-   <li class="advantages-item">Over 500 unique levels</li>
-   <li class="advantages-item">Colorful and vibrant graphics</li>
-   <li class="advantages-item">Engaging storyline and characters</li>
-   <li class="advantages-item">Daily rewards and special events</li>
-   <li class="advantages-item">Fun and easy to learn gameplay</li>
-  </ul>
- </div>
-</section>
-  <section class="questions" id="questions">
- <div class="container">
-  <h2 class="title questions-title">Frequently Asked Questions</h2>
-  <div class="eye_1"><img class="eye_1-img" src="../img/questions/eye_1_1x.png" alt="eye_1"></div>
-  <p class="questions-text">Find answers to common questions about the game</p>
-  <div class="eye_2"><img class="eye_2-img"  src="../img/questions/eye_2_1x.png" alt="eye_2"></div>
-  <div class="questions-container-flex">
-   <ul class="questions-list">
-    <li class="questions-item">How do I start playing? <br><span class="questions-span">Download and press play!</span>
-    </li>
-    <li class="questions-item">HIs it free? <br><span class="questions-span">Yes, with optional purchases.</span></li>
-    <li class="questions-item">Can I play offline? <br><span class="questions-span">Yes, offline mode available.</span>
-    </li>
-    <li class="questions-item">How to get power-ups? <br><span class="questions-span">Earn or buy in-game.</span></li>
-    <li class="questions-item">Strategies for tough levels? <br><span class="questions-span">Use power-ups
-      wisely.</span>
-    </li>
-    <li class="questions-item">Playing with friends? <br><span class="questions-span">Connect to social networks.</span>
-    </li>
-    <li class="questions-item">Unlocking new levels?. <br><span class="questions-span">Complete the
-      previous ones.</span></li>
-    <li class="questions-item">Age restrictions? <br><span class="questions-span">Suitable for all
-      ages.</span></li>
-    <li class="questions-item">Game crashing issues? <br><span class="questions-span">Restart or
-      reinstall.</span></li>
-    <li class="questions-item">Support contact? <br><span class="questions-span">Through the
-      app or website.</span></li>
-   </ul>
+      <section class="advantages" id="advantages">
+  <div class="container">
+    <h2 class="title advantages-title" data-text="ADVANTAGES">ADVANTAGES</h2>
+    <ul class="advantages-list">
+      <li class="advantages-item">Exciting bubble shooter mechanics</li>
+      <li class="advantages-item">Over 500 unique levels</li>
+      <li class="advantages-item">Colorful and vibrant graphics</li>
+      <li class="advantages-item">Engaging storyline and characters</li>
+      <li class="advantages-item">Daily rewards and special events</li>
+      <li class="advantages-item">Fun and easy to learn gameplay</li>
+    </ul>
   </div>
-  <div class="questions-container-flowers"><img class="questions-container-flowers-img" src="/buggle-2/assets/flowers-3ec363d6.svg"
-    alt="flowers" aria-label="img-flowers">
-  </div>
-  <p class="questions-about-text">STARLUCKHUB.COM IS A PLATFORM FOR HAVING FUN. THE PROBABILITY OF WINNING PLAYING THIS
-   GAME CANNOT BE CONSIDERED THE SAME
-   AS WINNING IN REAL LIFE GAMES. GAME IS AVAILABLE TO ADULT AUDIENCES OVER 18 YEARS OF AGE. ENJOY PLAYING THIS GAME!
-  </p>
- </div>
 </section>
-  <section class="footer-links">
+
+      <section class="questions" id="FAQ">
+  <div class="container">
+    <h2 class="title questions-title" data-text="Frequently Asked Questions">
+      Frequently Asked Questions
+    </h2>
+    <div class="eye_1">
+      <img class="eye_1-img" src="/buggle-2/assets/eye_1_1x-9792188a.png" alt="eye_1" />
+    </div>
+    <p class="questions-text">
+      Find answers to common questions about the game
+    </p>
+    <div class="eye_2">
+      <img class="eye_2-img" src="/buggle-2/assets/eye_2_1x-3a2f1e33.png" alt="eye_2" />
+    </div>
+    <div class="questions-container-flex">
+      <ul class="questions-list">
+        <li class="questions-item">
+          How do I start playing? <br /><span class="questions-span"
+            >Download and press play!</span
+          >
+        </li>
+        <li class="questions-item">
+          HIs it free? <br /><span class="questions-span"
+            >Yes, with optional purchases.</span
+          >
+        </li>
+        <li class="questions-item">
+          Can I play offline? <br /><span class="questions-span"
+            >Yes, offline mode available.</span
+          >
+        </li>
+        <li class="questions-item">
+          How to get power-ups? <br /><span class="questions-span"
+            >Earn or buy in-game.</span
+          >
+        </li>
+        <li class="questions-item">
+          Strategies for tough levels? <br /><span class="questions-span"
+            >Use power-ups wisely.</span
+          >
+        </li>
+        <li class="questions-item">
+          Playing with friends? <br /><span class="questions-span"
+            >Connect to social networks.</span
+          >
+        </li>
+        <li class="questions-item">
+          Unlocking new levels?. <br /><span class="questions-span"
+            >Complete the previous ones.</span
+          >
+        </li>
+        <li class="questions-item">
+          Age restrictions? <br /><span class="questions-span"
+            >Suitable for all ages.</span
+          >
+        </li>
+        <li class="questions-item">
+          Game crashing issues? <br /><span class="questions-span"
+            >Restart or reinstall.</span
+          >
+        </li>
+        <li class="questions-item">
+          Support contact? <br /><span class="questions-span"
+            >Through the app or website.</span
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="questions-container-flowers">
+      <img
+        class="questions-container-flowers-img"
+        src="/buggle-2/assets/flowers-3ec363d6.svg"
+        alt="flowers"
+        aria-label="img-flowers"
+      />
+    </div>
+    <p class="questions-about-text">
+      STARLUCKHUB.COM IS A PLATFORM FOR HAVING FUN. THE PROBABILITY OF WINNING
+      PLAYING THIS GAME CANNOT BE CONSIDERED THE SAME AS WINNING IN REAL LIFE
+      GAMES. GAME IS AVAILABLE TO ADULT AUDIENCES OVER 18 YEARS OF AGE. ENJOY
+      PLAYING THIS GAME!
+    </p>
+  </div>
+</section>
+
+      <section class="footer-links">
   <div class="container">
     <div class="footer-links-group">
       <a
@@ -348,9 +485,9 @@
   </div>
 </section>
 
- </main>
+    </main>
 
- <footer class="footer">
+    <footer class="footer">
   <div class="container">
     <p
       class="footer-text"
@@ -362,7 +499,6 @@
 </footer>
 
 
- 
-</body>
-
+    
+  </body>
 </html>
