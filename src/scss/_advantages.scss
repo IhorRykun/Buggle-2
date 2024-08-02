@@ -1,0 +1,27 @@
+.advantages {
+  padding-top: 27px;
+
+  @include media(desktop) {
+    padding-top: 70px;
+  }
+
+  &-title {
+    margin-bottom: 27px;
+    @include media(desktop) {
+      padding-top: 70px;
+    }
+  }
+
+  &-list {
+    font-size: $_main_font_size;
+    font-weight: $_main_font_weight;
+
+    list-style: square;
+    padding-left: 20px;
+    @include media(desktop) {
+      font-size: 45px;
+      line-height: 1.13;
+      width: 858px;
+    }
+  }
+}
