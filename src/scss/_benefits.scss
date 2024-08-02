@@ -24,22 +24,21 @@
 
   &-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &-item {
-    display: flex;
-    flex-direction: column;
-    width: 56px;
-    background-color: #bfd800;
     margin-right: 16px;
     min-height: 23px;
+    border-radius: 12px;
 
     @include media(desktop) {
+      background-color: $_main_bg_color;
       margin: 0;
       width: 220px;
       justify-content: space-between;
       min-height: 298px;
+      margin-right: 104px;
     }
 
     &:last-child {
@@ -48,26 +47,37 @@
     &:first-child {
       margin-top: 0;
     }
+    &-container {
+      width: 56px;
+
+      @include media(desktop) {
+        width: 214px;
+      }
+    }
 
     &-text {
+      display: flex;
+      text-align: center;
+      margin-top: 12px;
+      font-size: 10px;
+      font-weight: $_main_font_weight;
       @include media(desktop) {
         margin-top: 43px;
         font-size: 40px;
       }
-
-      margin-top: 10px;
-      text-align: center;
-      font-size: 10px;
-      font-weight: $_main_font_weight;
-      width: 217px;
     }
   }
 
   &-img {
-    width: 51px;
+    background-color: #cee044;
+    width: 56px;
+    height: 53px;
+    border-radius: 12px;
 
     @include media(desktop) {
-      width: 213px;
+      width: 214px;
+      min-height: 136px;
+      background-color: inherit;
     }
   }
 }

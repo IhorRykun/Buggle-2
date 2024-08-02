@@ -1,0 +1,126 @@
+.questions {
+  padding-top: 34px;
+
+  @include media(desktop) {
+    padding-top: 70px;
+  }
+
+  &-title {
+    margin-bottom: 14px;
+    @include media(desktop) {
+      width: 540px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+  &-text {
+    font-size: $_main_font_size;
+    font-weight: $_main_font_weight;
+    line-height: 1.13;
+    text-align: center;
+    width: 173px;
+    margin: 0 auto;
+    @include media(desktop) {
+      font-size: 30px;
+      width: 493px;
+    }
+  }
+  &-list {
+    font-weight: $_main_font_weight;
+    font-size: $_main_font_size;
+    align-items: center;
+    line-height: 1.13;
+    margin-top: 15px;
+
+    @include media(desktop) {
+      text-align: left;
+      margin-top: 70px;
+      font-size: 45px;
+      line-height: 1.13;
+    }
+  }
+  &-item {
+    text-align: center;
+    margin-bottom: 20px;
+    color: $_accent_color;
+    text-align: left;
+    @include media(desktop) {
+      margin-bottom: 40px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-span {
+    color: $_white_font_color;
+    @include media(desktop) {
+    }
+  }
+  &-about-text {
+    max-width: 271px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-align: center;
+    @include media(desktop) {
+      max-width: 700px;
+      width: 708px;
+      font-weight: $_main_font_weight;
+      font-size: 30px;
+      margin: 0 auto;
+      margin-top: 154px;
+      margin-bottom: 155px;
+      line-height: 1.13;
+    }
+  }
+}
+
+.questions-container-flowers {
+  width: 34px;
+  margin: 0 auto;
+  @include media(desktop) {
+    width: 500px;
+  }
+  &-img {
+    width: 34px;
+    @include media(desktop) {
+      width: 500px;
+      position: absolute;
+      bottom: 504px;
+      right: -120px;
+    }
+  }
+}
+
+.eye_1 {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 20px;
+  @include media(desktop) {
+    position: absolute;
+    width: 194px;
+    right: 0;
+  }
+
+  &-img {
+    @include media(desktop) {
+      position: absolute;
+      right: -900px;
+      top: 420px;
+    }
+  }
+}
+
+.eye_2 {
+  position: absolute;
+  right: 25px;
+  top: 50px;
+  width: 20px;
+  @include media(desktop) {
+    width: 194px;
+    top: -30px;
+  }
+}
