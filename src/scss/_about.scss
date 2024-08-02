@@ -9,34 +9,35 @@
 
   &-container--flex {
     display: flex;
-    align-items: center;
+    // align-items: center;
+    justify-content: center;
+    gap: 11px;
 
     @include media(desktop) {
-      align-items: flex-start;
+      gap: 150px;
     }
   }
 
   &-text {
     font-size: $_main_font_size;
     font-weight: $_main_font_weight;
-    line-height: 1.08;
 
     width: 180px;
     text-align: center;
 
     @include media(desktop) {
       font-size: 45px;
-      line-height: 1.13;
       width: 686px;
     }
   }
 }
 
 .gift-container {
+  margin-top: 10px;
+  height: 100%;
   width: 60px;
-  margin-left: 11px;
+
   @include media(desktop) {
     width: 199px;
-    margin-left: 152px;
   }
 }

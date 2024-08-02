@@ -24,7 +24,7 @@
       display: block;
       position: absolute;
       top: -50px;
-      right: 0;
+      right: 30px;
       z-index: 0;
       width: 862px;
     }
@@ -46,20 +46,28 @@
       display: none;
     }
   }
-  &-tittle-mobile {
+  &-title-mobile {
+    margin: 0 auto;
     position: relative;
-    font-size: 18px;
+    width: 200px;
+
     text-align: center;
-    line-height: 16px;
+    font-size: 18px;
     font-weight: $_main_font_weight;
-    // -webkit-text-stroke: 1.5px $_accent_color;
-    // color: $_white_font_color;
-    // font-weight: $_main_font_weight;
-    -webkit-text-fill-color: $_white_font_color;
-    -webkit-text-stroke: 1px $_accent_color;
+    color: $_white_font_color;
 
     @include media(desktop) {
       display: none;
+    }
+
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      right: 0;
+
+      -webkit-text-stroke: 6px $_accent_color;
+      z-index: -1;
     }
   }
 
@@ -91,9 +99,7 @@
     transition: $_main_transition;
 
     &:hover {
-      transform: scale(1.2);
-
-      border: none;
+      transform: scale(1.1);
       color: $_accent_color;
     }
   }

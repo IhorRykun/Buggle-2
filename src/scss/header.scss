@@ -19,6 +19,13 @@
     }
   }
 
+  &-logo-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &-burger-button {
     position: absolute;
     z-index: 10000;
@@ -79,6 +86,7 @@
   }
 
   &-mobile-title {
+    margin: 0 auto;
     position: relative;
     width: 200px;
 

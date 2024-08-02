@@ -5,19 +5,8 @@
   }
 
   &-title {
-    position: relative;
-    color: $_accent_color;
-    -webkit-text-stroke: 1px $_white_font_color;
-    text-align: center;
     margin-bottom: 18px;
-
     @include media(desktop) {
-      position: relative;
-      color: $_accent_color;
-      -webkit-text-stroke: 3px $_white_font_color;
-      font-size: 60px;
-      line-height: 53px;
-      text-align: center;
       margin-bottom: 70px;
     }
   }
