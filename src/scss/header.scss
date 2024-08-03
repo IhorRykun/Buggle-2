@@ -7,6 +7,25 @@
     background-color: rgba(255, 255, 255, 0.15);
   }
 
+  &-arrow-up {
+    display: none;
+    @include media(desktop) {
+      position: fixed;
+      display: block;
+      width: 50px;
+      cursor: pointer;
+      bottom: 50px;
+      right: 130px;
+      fill: $_accent_color_hover;
+      transition: $_main_transition;
+
+      &:hover {
+        fill: $_accent_color;
+        transition: $_main_transition;
+      }
+    }
+  }
+
   &-logo {
     height: 100%;
     display: flex;
@@ -153,4 +172,8 @@
 
 .no-scroll {
   overflow: hidden;
+}
+
+.hide {
+  display: none;
 }

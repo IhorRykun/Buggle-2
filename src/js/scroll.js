@@ -1,6 +1,7 @@
 const mobileMenuButton = document.getElementById('mobileMenuButton');
 const mobileMenu = document.getElementById('mobileMenu');
 const body = document.body;
+const linkArrow = document.querySelector('.header-arrow-up');
 
 document.querySelectorAll('nav a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -26,4 +27,11 @@ document.querySelectorAll('nav a').forEach(anchor => {
       }
     }
   });
+});
+
+document.addEventListener('scroll', () => {
+  linkArrow.classList.add('hide');
+});
+document.addEventListener('mousemove', () => {
+  linkArrow.classList.remove('hide');
 });
