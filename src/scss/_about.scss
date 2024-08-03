@@ -1,4 +1,9 @@
 .about {
+   padding-top: 30px;
+  @include media(desktop) {
+    padding-top: 70px;
+  }
+
   &-title {
     margin-bottom: 20px;
 

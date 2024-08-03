@@ -17,11 +17,18 @@
     font-weight: $_main_font_weight;
 
     list-style: square;
-    padding-left: 20px;
+    padding: 0 20px;
     @include media(desktop) {
       font-size: 45px;
       line-height: 1.13;
-      width: 858px;
+      // width: 858px;
+    }
+  }
+
+  &-item-span {
+    padding-left: 0;
+    @include media(desktop) {
+      padding-left: 20px;
     }
   }
 }
