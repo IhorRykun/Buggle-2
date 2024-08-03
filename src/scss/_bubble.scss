@@ -168,8 +168,7 @@
   max-width: 186px;
   width: 100%;
   height: 145px;
-  padding: 0;
-  margin: 0;
+  margin: 0 auto;
   @include media(desktop) {
     display: none;
   }
