@@ -5,19 +5,21 @@
   <div class="buggle-container-relative">
    <picture class="buggle-picture-bubble">
     <source srcset="/img/buggle/main_1x.webp 1x, /img/buggle/main_2x.webp 2x" />
-    <img src="/img/buggle/main_1x.webp" alt="img_main" />
+    <img src="/img/buggle/main_1x.webp" alt="img_main" loading='lazy' />
    </picture>
    <h1 class="buggle-title-mobile" data-text="Buggle 2">Buggle 2</h1>
    <h2 class="buggle-title-mobile" data-text="Color Bubble Shoter">
     Color Bubble Shoter
    </h2>
-   <picture class="buggle-picture-bubble--mobile">
-    <source srcset="
-            /img/buggle/main_moble_1x.png 1x,
-            /img/buggle/main_moble_2x.png 2x
-          " />
-    <img src="/img/buggle/main_moble_1x.png" alt="img_main" />
-   </picture>
+   <div class="buggle-picture-bubble--mobile-container">
+    <picture>
+     <source srcset="
+                /img/buggle/main_moble_1x.png 1x,
+                /img/buggle/main_moble_2x.png 2x
+              " loading='lazy' />
+     <img class="buggle-picture-bubble--mobile" src="/img/buggle/main_moble_1x.png" alt="img_main" loading='lazy' />
+    </picture>
+   </div>
   </div>
   <h2 class="buggle-title">Color Bubble Shooter</h2>
   <div class="buggle-container--link">
@@ -34,14 +36,14 @@
           /img/buggle/ball_white_1x.webp 1x,
           /img/buggle/ball_white_2x.webp 2x
         " />
-   <img class="buggle-bubble--white" src="/img/buggle/ball_white_1x.webp" alt="ball_white" />
+   <img class="buggle-bubble--white" src="/img/buggle/ball_white_1x.webp" alt="ball_white" loading='lazy' />
   </picture>
   <picture>
    <source srcset="
           /img/buggle/ball_green_1x.webp 1x,
           /img/buggle/ball_green_2x.webp 2x
         " />
-   <img class="buggle-bubble--green" src="/img/buggle/ball_ball_green_1x_1x.webp" alt="ball_green" />
+   <img class="buggle-bubble--green" src="/img/buggle/ball_ball_green_1x_1x.webp" alt="ball_green" loading='lazy' />
   </picture>
  </div>
 </section>
