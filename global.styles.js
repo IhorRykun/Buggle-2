@@ -5,6 +5,8 @@ const resetStyles = '@import "./src/scss/common/_reset.scss"';
 const scrollbarStyles = '@import "./src/scss/common/_scrollbar.scss"';
 const containerStyles = '@import "./src/scss/common/_container.scss"';
 const titleStyles = '@import "./src/scss/common/_title.scss"';
+const scrollToTopButtonStyles =
+  '@import "./src/scss/common/_scrollToTopButton.scss"';
 
 const styles = [
   variablesStyles,
@@ -14,6 +16,7 @@ const styles = [
   scrollbarStyles,
   containerStyles,
   titleStyles,
+  scrollToTopButtonStyles,
 ];
 
 export const globalStylesOptions = styles.reduce((acc, i) => acc + i + ';', '');
