@@ -13,99 +13,161 @@
     <title>Buggle 2</title>
     
     <script type="module" crossorigin src="/buggle-2/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/buggle-2/assets/styles-1f3e4e78.js">
+    <link rel="modulepreload" crossorigin href="/buggle-2/assets/scrollToTopButton-525ce257.js">
     <link rel="modulepreload" crossorigin href="/buggle-2/assets/vendor-52062990.js">
-    <link rel="stylesheet" href="/buggle-2/assets/styles-a4d79203.css">
+    <link rel="stylesheet" href="/buggle-2/assets/scrollToTopButton-0db01a66.css">
     <link rel="stylesheet" href="/buggle-2/assets/vendor-7c8ef494.css">
   </head>
 
   <body>
-    <header class="header" id="header">
- <div><a class="header-arrow-up" href="#header"><svg width="80" height="80">
-    <use href="/buggle-2/assets/sprite-88751e0d.svg#up"></use></a>
-  </svg></div>
- <div class="container" style="position: relative">
-  <div class="header-logo">
-   <a class="header-logo-link" href="./index.html" aria-label="logo"><img src="/buggle-2/assets/buggle-6097522f.svg" alt="logo" /></a>
-  </div>
+    <header class="header">
+  <div class="container" style="position: relative">
+    <div class="header-logo">
+      <a class="header-logo-link" href="./index.html" aria-label="logo"
+        ><img src="/buggle-2/assets/buggle-6097522f.svg" alt="logo"
+      /></a>
+    </div>
 
-  <button aria-label="button-burger-menu" type="button" class="header-burger-button" id="mobileMenuButton">
-   <div class="header-burger-button-stick" id="stick1"></div>
-   <div class="header-burger-button-stick" id="stick2"></div>
-   <div class="header-burger-button-stick" id="stick3"></div>
-  </button>
+    <button
+      aria-label="button-burger-menu"
+      type="button"
+      class="header-burger-button"
+      id="mobileMenuButton"
+    >
+      <div class="header-burger-button-stick" id="stick1"></div>
+      <div class="header-burger-button-stick" id="stick2"></div>
+      <div class="header-burger-button-stick" id="stick3"></div>
+    </button>
 
-  <nav class="header-mobile-nav" id="mobileMenu">
-   <h1 class="header-mobile-title" data-text="Buggle 2">Buggle 2</h1>
-   <h2 class="header-mobile-title" data-text="Color Bubble Shoter">
-    Color Bubble Shoter
-   </h2>
+    <nav class="header-mobile-nav" id="mobileMenu">
+      <h1 class="header-mobile-title" data-text="Buggle 2">Buggle 2</h1>
+      <h2 class="header-mobile-title" data-text="Color Bubble Shoter">
+        Color Bubble Shoter
+      </h2>
 
-   <ul class="header-mobile-nav-list">
+      <ul class="header-mobile-nav-list">
+        <li class="header-desktop-nav-item">
+          <a
+            aria-label="button-home"
+            href="./index.html"
+            class="header-desktop-nav-link"
+            data-text="Home"
+            >Home</a
+          >
+        </li>
+
+        <li class="header-desktop-nav-item">
+          <a
+            aria-label="button-Benefits"
+            href="#benefits"
+            class="header-desktop-nav-link"
+            data-text="Benefits"
+            >Benefits</a
+          >
+        </li>
+
+        <li class="header-desktop-nav-item">
+          <a
+            href="#gallery"
+            aria-label="button-Gallery"
+            class="header-desktop-nav-link"
+            data-text="Gallery"
+            >Gallery</a
+          >
+        </li>
+
+        <li class="header-desktop-nav-item">
+          <a
+            href="#about"
+            class="header-desktop-nav-link"
+            data-text="About"
+            aria-label="button-About"
+            >About</a
+          >
+        </li>
+
+        <li class="header-desktop-nav-item">
+          <a
+            href="#reviews"
+            class="header-desktop-nav-link"
+            data-text="Reviews"
+            aria-label="button-Reviews"
+            >Reviews</a
+          >
+        </li>
+
+        <li class="header-desktop-nav-item">
+          <a
+            aria-label="button-Advantages"
+            href="#advantages"
+            class="header-desktop-nav-link"
+            data-text="Advantages"
+            >Advantages</a
+          >
+        </li>
+
+        <li class="header-desktop-nav-item">
+          <a
+            href="#FAQ"
+            aria-label="button-FAQ"
+            class="header-desktop-nav-link"
+            data-text="FAQ"
+            >FAQ</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="header-desktop-nav">
+  <ul class="header-desktop-nav-list">
     <li class="header-desktop-nav-item">
-     <a aria-label="button-home" href="#header" class="header-desktop-nav-link" data-text="Home">Home</a>
+      <a href="./index.html" class="header-desktop-nav-link" data-text="Home"
+        >Home</a
+      >
     </li>
 
     <li class="header-desktop-nav-item">
-     <a aria-label="button-Benefits" href="#benefits" class="header-desktop-nav-link" data-text="Benefits">Benefits</a>
+      <a href="#benefits" class="header-desktop-nav-link" data-text="Benefits"
+        >Benefits</a
+      >
     </li>
 
     <li class="header-desktop-nav-item">
-     <a href="#gallery" aria-label="button-Gallery" class="header-desktop-nav-link" data-text="Gallery">Gallery</a>
+      <a href="#gallery" class="header-desktop-nav-link" data-text="Gallery"
+        >Gallery</a
+      >
     </li>
 
     <li class="header-desktop-nav-item">
-     <a href="#about" class="header-desktop-nav-link" data-text="About" aria-label="button-About">About</a>
+      <a href="#about" class="header-desktop-nav-link" data-text="About"
+        >About</a
+      >
     </li>
 
     <li class="header-desktop-nav-item">
-     <a href="#reviews" class="header-desktop-nav-link" data-text="Reviews" aria-label="button-Reviews">Reviews</a>
+      <a href="#reviews" class="header-desktop-nav-link" data-text="Reviews"
+        >Reviews</a
+      >
     </li>
 
     <li class="header-desktop-nav-item">
-     <a aria-label="button-Advantages" href="#advantages" class="header-desktop-nav-link"
-      data-text="Advantages">Advantages</a>
+      <a
+        href="#advantages"
+        class="header-desktop-nav-link"
+        data-text="Advantages"
+        >Advantages</a
+      >
     </li>
 
     <li class="header-desktop-nav-item">
-     <a href="#FAQ" aria-label="button-FAQ" class="header-desktop-nav-link" data-text="FAQ">FAQ</a>
+      <a href="#FAQ" class="header-desktop-nav-link" data-text="FAQ">FAQ</a>
     </li>
-   </ul>
-  </nav>
-
-  <nav class="header-desktop-nav">
- <ul class="header-desktop-nav-list">
-  <li class="header-desktop-nav-item">
-   <a href="#header" class="header-desktop-nav-link" data-text="Home">Home</a>
-  </li>
-
-  <li class="header-desktop-nav-item">
-   <a href="#benefits" class="header-desktop-nav-link" data-text="Benefits">Benefits</a>
-  </li>
-
-  <li class="header-desktop-nav-item">
-   <a href="#gallery" class="header-desktop-nav-link" data-text="Gallery">Gallery</a>
-  </li>
-
-  <li class="header-desktop-nav-item">
-   <a href="#about" class="header-desktop-nav-link" data-text="About">About</a>
-  </li>
-
-  <li class="header-desktop-nav-item">
-   <a href="#reviews" class="header-desktop-nav-link" data-text="Reviews">Reviews</a>
-  </li>
-
-  <li class="header-desktop-nav-item">
-   <a href="#advantages" class="header-desktop-nav-link" data-text="Advantages">Advantages</a>
-  </li>
-
-  <li class="header-desktop-nav-item">
-   <a href="#FAQ" class="header-desktop-nav-link" data-text="FAQ">FAQ</a>
-  </li>
- </ul>
+  </ul>
 </nav>
- </div>
+
+  </div>
 </header>
+
 
     <main>
       <section class="buggle">
@@ -390,6 +452,13 @@
     </p>
   </div>
 </footer>
+
+
+    <button type="button" id="scrollToTopButton" class="scroll-to-top-button">
+  <svg class="scroll-to-top-icon">
+    <use href="/buggle-2/assets/sprite-88751e0d.svg#up"></use>
+  </svg>
+</button>
 
 
     
