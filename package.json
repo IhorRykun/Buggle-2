@@ -21,7 +21,7 @@
     "vite": "^4.5.2",
     "vite-plugin-image-optimizer": "^1.1.8"
   },
-  "author": "Max Farmaha <maks.farmaha@gmail.com>",
+  "author": "ihorRykun <ihorrykun@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "swiper": "^11.1.8",
