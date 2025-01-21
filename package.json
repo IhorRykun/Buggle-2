@@ -1,12 +1,12 @@
 {
-  "name": "buggle-2",
+  "name": "Buggle-2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://ihorrykun.github.io/Buggle-2/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/buggle-2/",
+    "build": "vite build --base=/Buggle-2/",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
@@ -29,3 +29,4 @@
     "vite-plugin-html-inject": "^1.0.1"
   }
 }
+
